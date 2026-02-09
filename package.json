@@ -1,0 +1,19 @@
+{
+  "name": "relay",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-agent orchestration system for AI workflows",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
