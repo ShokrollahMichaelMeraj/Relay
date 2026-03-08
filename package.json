@@ -1,0 +1,22 @@
+{
+  "name": "relay",
+  "version": "0.1.0",
+  "description": "AI voice agent that replaces hold music with intelligent customer intake",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "openai": "^4.0.0",
+    "redis": "^4.6.0",
+    "resend": "^3.5.0",
+    "twilio": "^5.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
