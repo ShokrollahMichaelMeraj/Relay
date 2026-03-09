@@ -1,10 +1,13 @@
 const express = require('express');
 const { createClient } = require('redis');
 const config = require('./config');
+const twilioRoutes = require('./routes/twilio');
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use('/webhooks/twilio', twilioRoutes); // ADD THIS
 
 // Health check
 app.get('/health', (req, res) => {
